@@ -1,18 +1,24 @@
-# Salesforce DX Project: Next Steps
+# Salesforce OmniStudio Project
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+A Org utilizada para o desenvolvimento é uma Developer Edition OmniStudio.
 
-## How Do You Plan to Deploy Your Changes?
+A Livraria consiste em um componente que CRIA uma Account, do tipo customizado 'Livraria', e define os produtos comercializados por ela.
+O fluxo é guiado e criado em OmniStudio com campos autoprrenchidos, dependendo dos inputs de entrada, validações, carregamentoe e salvamento feitos com as ferrrarmntas DataRaptor, Integration Procedure, FlexiCards e outros.
+Para cada Livraria criada é criada uma Oportunidade via FLOW TRIGGER.
+No fluxo o usuário define o tipo de Produto, a Unidade de interesse e sua Quantidade.
+O processo foi automatizado no preenchimento do endereço, via API externa ViaCEP, com uma chamada Externa tipo GET.
+O preenchimento dos campos para os tipos de produtos disponíveis (RecordTypes) é feito no carregaento da página por uma TRIGGER e tem os campos PickList preenchidos por uma classe Apex customizada.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+A atuação para o desenvolvimento envolveu:
+- Criação de Aplicativo
+- Criação de Perfil Vendedor
+- Criação de permission set
+- Criação de campos
+- Criação de recordtype
+- Criação de omniscript
+- Criação de integration procedure
+- Criação de data raptors (Extract,Post, transform)
+- Criação de flexcard
+- Criação de flow
+- Criação de Classe para chamada de serviço
+- Criação de Classe de teste
