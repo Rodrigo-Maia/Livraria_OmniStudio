@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revista</fullName>
+    <active>true</active>
+    <label>Revista</label>
+    <picklistValues>
+        <picklist>Categoria__c</picklist>
+        <values>
+            <fullName>Aventura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ficção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Romance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Family</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QuantityUnitOfMeasure</picklist>
+        <values>
+            <fullName>Each</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
